@@ -1,6 +1,5 @@
 # HTTPS_Serverless_Application
 # 🎟️ Raffle Application (Serverless on AWS)
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/331901b2-5105-4d83-87e3-6aba4824e6c6" />
 This is a **serverless raffle application** built with **AWS services**. Users can apply to join a raffle, and an admin can run a draw to randomly select winners. The app is fully serverless, scalable, and cost-efficient.
 
 ---
