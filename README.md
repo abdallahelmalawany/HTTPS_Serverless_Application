@@ -1,38 +1,6 @@
 # HTTPS_Serverless_Application
 # 🎟️ Raffle Application (Serverless on AWS)
-```mermaid
-flowchart TD
 
-  User[👤 User] -->|HTTP Request| APIGW[🌐 API Gateway]
-
-  APIGW -->|POST /register| LambdaRegister[🟢 Lambda: Register]
-  APIGW -->|GET /count| LambdaCount[🟠 Lambda: Count]
-  APIGW -->|POST /winners| LambdaWinners[🔵 Lambda: Select Winners]
-
-  LambdaRegister -->|PutItem| DynamoDB[(🗄️ DynamoDB: devops90_raffle)]
-  LambdaCount -->|Scan COUNT| DynamoDB
-  LambdaWinners -->|Query + Update| DynamoDB
-
-This is a **serverless raffle application** built with **AWS services**. Users can apply to join a raffle, and an admin can run a draw to randomly select winners. The app is fully serverless, scalable, and cost-efficient.
-
----
-
-## 🚀 Architecture
-
-![Architecture Diagram](docs/architecture.png)
-
-**AWS Services Used:**
-
-* **Amazon S3** → Host static frontend (`apply.html`, `draw.html`)
-* **Amazon CloudFront** → CDN for global content delivery
-* **Amazon Route 53 + ACM** → Custom domain & HTTPS
-* **Amazon API Gateway** → REST API endpoints (`/apply`, `/count`, `/draw`)
-* **AWS Lambda** → Backend logic (3 functions: `apply`, `count`, `draw`)
-* **Amazon DynamoDB** → Store raffle participants & winners
-* **AWS CloudWatch** → Logs & monitoring
-* **AWS IAM** → Permissions & security
-
----
 
 ## 📂 Project Structure
 
