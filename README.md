@@ -176,3 +176,5 @@ This raffle application demonstrates a **complete serverless solution** on AWS w
 * Logging & monitoring (CloudWatch)
 
 🎉 Users can join raffles, and admins can easily run draws to select winners!
+<img width="1907" height="793" alt="Screenshot 2025-08-17 at 23-55-35 CloudWatch us-east-1" src="https://github.com/user-attachments/assets/822bca41-6961-40ad-81fd-acd57327cb87" />
+
